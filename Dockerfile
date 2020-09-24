@@ -21,6 +21,9 @@ RUN wget https://nixos.org/releases/nix/nix-${NIX_VERSION}/nix-${NIX_VERSION}-x8
   && /nix/var/nix/profiles/default/bin/nix-collect-garbage --delete-old \
   && /nix/var/nix/profiles/default/bin/nix-store --optimise \
   && /nix/var/nix/profiles/default/bin/nix-store --verify --check-contents
+  
+# Adding stuff needed for codespaces
+RUN apk add bash
 
 ONBUILD ENV \
     ENV=/etc/profile \
