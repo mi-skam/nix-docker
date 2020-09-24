@@ -1,3 +1,5 @@
+![Docker](https://github.com/mi-skam/nix-docker/workflows/Docker/badge.svg)
+
 This image contains an installation of the [Nix package manager](https://nixos.org/nix/).
 
 Use this build to create your own customized images as follows:
